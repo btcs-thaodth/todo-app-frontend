@@ -19,18 +19,16 @@ function useQuery<T>(url: string, options?: UseQueryOptions) {
   const setToastMessage = useSetRecoilState(notificationState)
 
   const refetch = () => setIsRefetch((prev) => !prev)
-
   useEffect(() => {
     if (!url) return undefined
-
     let cancelRequest = false
 
     const fetchData = async () => {
       setIsLoading(true)
       try {
-        const response = await api.get<T>(url, options?.params)
+        const response = await api.get<{data: T}>(url, options?.params)
         if (cancelRequest) return
-        setData(response)
+        setData(response.data)
         setIsLoading(false)
         setIsFetched(true)
       } catch (err) {

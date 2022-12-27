@@ -1,0 +1,5 @@
+export const CREATE_TODO_URL = process.env.REACT_APP_API_ENDPOINT + 'todo/'
+export const GET_TODO_URL = process.env.REACT_APP_API_ENDPOINT + 'todo/'
+export const UPDATE_TODO_URL = process.env.REACT_APP_API_ENDPOINT + 'todo/'
+export const CHANGE_STATUS_TODO_URL = process.env.REACT_APP_API_ENDPOINT + 'todo/change-status/'
+export const DELETE_TODO_URL = process.env.REACT_APP_API_ENDPOINT + 'todo/'
