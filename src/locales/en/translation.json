@@ -2,8 +2,24 @@
   "homepage": {
     "title": "Welcome to website"
   },
-  "login": {
-    "title": "Login"
+  "todo": {
+    "todo": "Todo",
+    "doing": "Doing",
+    "done": "Done",
+    "title": "Title",
+    "content": "Content",
+    "addCard": "Add a card",
+    "addList": "Add another list",
+    "addSuccess": "Successfully added task",
+    "addError": "Failed to add task",
+    "deleteSuccess": "Task deleted successfully",
+    "deleteError": "Failed to delete task",
+    "changeSuccess": "Status change task successful",
+    "changeError": "Status change task error"
+  },
+  "button": {
+    "add": "Add",
+    "cancel": "Cancel"
   },
   "error": {
     "default": "Something went wrong",

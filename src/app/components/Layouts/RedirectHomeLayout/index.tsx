@@ -1,5 +1,6 @@
 import { Navigate, Outlet } from 'react-router-dom'
 import { useRecoilValue } from 'recoil'
+import Navbar from '../../Navbar';
 
 import { userState } from '../../../../store/user'
 
@@ -8,5 +9,10 @@ export default function RedirectHomeLayout() {
 
   if (user) return <Navigate to="/" />
 
-  return <Outlet />
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  )
 }

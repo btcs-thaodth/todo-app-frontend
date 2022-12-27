@@ -1,7 +1,7 @@
 import { RouteObject, useRoutes } from 'react-router-dom'
 import { HomePage } from 'src/app/pages/homepage'
 
-import Login from '../../pages/login'
+import Todo from '../../pages/todo'
 import ProtectedLayout from '../Layouts/ProtectedLayout'
 import RedirectHomeLayout from '../Layouts/RedirectHomeLayout'
 import NotFound from '../NotFound'
@@ -19,12 +19,12 @@ export const routesConfig: RouteObject[] = [
     ],
   },
   {
-    path: '/login',
+    path: '/todo',
     element: <RedirectHomeLayout />,
     children: [
       {
         index: true,
-        element: <Login />,
+        element: <Todo />,
       },
     ],
   },

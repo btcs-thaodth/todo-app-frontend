@@ -2,8 +2,24 @@
   "homepage": {
     "title": "Web サイトへようこそ"
   },
-  "login": {
-    "title": "ログイン"
+  "todo": {
+    "todo": "やること",
+    "doing": "している",
+    "done": "完了",
+    "title": "題名",
+    "content": "説明",
+    "addCard": "カードを追加",
+    "addList": "別のリスを追加",
+    "addSuccess": "タスクの成功を追加",
+    "addError": "タスクの追加に失敗しました",
+    "deleteSuccess": "タスクの削除成功",
+    "deleteError": "タスクの削除に失敗しました",
+    "changeSuccess": "ステータス変更タスク成功",
+    "changeError": "ステータス変更タスク エラー"
+  },
+  "button": {
+    "add": "追加",
+    "cancel": "取消"
   },
   "error": {
     "default": "何か問題が発生しました",
